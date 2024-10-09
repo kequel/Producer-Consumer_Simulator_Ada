@@ -106,11 +106,11 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
          select
             -- Attempt to deliver an assembly
             B.Deliver(Assembly_Type, Assembly_Number);
-            Put_Line("XD");
+            Put_Line(ESC & "[96m" & "C: " & Consumer_Name(Consumer_Nb) & " takes assembly " & Assembly_Name(Assembly_Type) & " number " & Integer'Image(Assembly_Number) & ESC & "[0m");
          or
               -- Wait for too long if the delivery is not ready
             delay 2.0;
-            Put_Line("Consumer waited too long. Does not want it anymore.");
+            Put_Line(ESC & "[96m" & "C: " & Consumer_Name(Consumer_Nb) & " waited for too long, and now does not want " & Assembly_Name(Assembly_Type) & " number " & Integer'Image(Assembly_Number) & ESC & "[0m");
          end select;
       end loop;
    end Consumer;
