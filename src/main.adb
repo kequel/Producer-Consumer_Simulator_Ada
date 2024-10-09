@@ -109,7 +109,7 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
             Put_Line("XD");
          or
               -- Wait for too long if the delivery is not ready
-            delay 2.0;
+            delay 6.0;
             Put_Line("Consumer waited too long. Does not want it anymore.");
          end select;
       end loop;
@@ -130,7 +130,7 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
    In_Storage: Integer := 0;
 
    -- Random delay for delivery
-   subtype Delivery_Delay_Range is Integer range 1 .. 3;
+   subtype Delivery_Delay_Range is Integer range 4 .. 8;
    package Random_Delivery is new Ada.Numerics.Discrete_Random(Delivery_Delay_Range);
    G_Delivery: Random_Delivery.Generator;
 
