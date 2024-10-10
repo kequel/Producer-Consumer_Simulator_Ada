@@ -88,8 +88,8 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
       Consumption: Integer;
       Assembly_Type: Integer;
       Consumer_Name: constant array (1 .. Number_Of_Consumers)
-        of String(1 .. 9)
-        := ("Consumer1", "Consumer2");
+        of String(1 .. 12)
+        := ("MEDIA EXPERT", "RTV EURO AGD");
    begin
       accept Start(Consumer_Number: in Consumer_Type;
                    Consumption_Time: in Integer) do
@@ -127,6 +127,12 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
       Random_Time_B: Duration;
       
       Storage_Capacity: constant Integer := 30;
+      Keychain_Max: constant Integer := 9;
+      Socks_Max: constant Integer := 9;
+      Tshirt_Max: constant Integer := 3;
+      Mousepad_Max: constant Integer := 3;
+      MousepadDeluxe_Max: constant Integer := 6;
+
       type Storage_type is array (Producer_Type) of Integer;
       Storage: Storage_type
         := (0, 0, 0, 0, 0);
@@ -138,7 +144,7 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
       Assembly_Number: array(Assembly_Type) of Integer
         := (1, 1, 1);
       In_Storage: Integer := 0;
-      
+     
       
       procedure Wait_Buffer is
       begin
@@ -160,14 +166,39 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
          end loop;
       end Setup_Variables;
 
-      function Can_Accept(Product: Producer_Type) return Boolean is
-      begin
-         if In_Storage >= Storage_Capacity then
-            return False;
-         else
-            return True;
-         end if;
-      end Can_Accept;
+   function Can_Accept(Product: Producer_Type) return Boolean is
+   begin
+      if In_Storage >= Storage_Capacity then
+         return False;
+      else
+         case Product is
+            when 1 => 
+               if Storage(Product) = Keychain_Max then
+                  return False;
+               end if;
+            when 2 => 
+               if Storage(Product) = Socks_Max then
+                  return False;
+               end if;
+            when 3 => 
+               if Storage(Product) = Tshirt_Max then
+                  return False;
+               end if;
+            when 4 => 
+               if Storage(Product) = Mousepad_Max then
+                  return False;
+               end if;
+            when 5 => 
+               if Storage(Product) = MousepadDeluxe_Max then
+                  return False;
+               end if;
+            when others => 
+               return True;
+         end case;
+         return True; 
+      end if;
+   end Can_Accept;
+
 
       function Can_Deliver(Assembly: Assembly_Type) return Boolean is
       begin
