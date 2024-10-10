@@ -113,7 +113,7 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
                     Assembly_Name(Assembly_Type) & ESC & "[0m");
                end if;
          or --spotkanie selektywne z przeterminowaniem
-            delay 1.0;
+            delay 2.0;
             Put_Line("Consumer waited too long. Does not want it anymore.");
             --musi jakos chyba usuwac ta prosbe - nie dzala
          end select; --spotkanie selektywne z przeterminowaniem
@@ -121,6 +121,11 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
    end Consumer;
 
    task body Buffer is
+      subtype Buffer_Time_Range is Integer range 1 .. 3;
+      package Random_Buffer is new Ada.Numerics.Discrete_Random(Buffer_Time_Range);
+      Gb: Random_Buffer.Generator;
+      Random_Time_B: Duration;
+      
       Storage_Capacity: constant Integer := 30;
       type Storage_type is array (Producer_Type) of Integer;
       Storage: Storage_type
@@ -133,6 +138,15 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
       Assembly_Number: array(Assembly_Type) of Integer
         := (1, 1, 1);
       In_Storage: Integer := 0;
+      
+      
+      procedure Wait_Buffer is
+      begin
+         Random_Buffer.Reset(Gb);
+         Random_Time_B:=Duration(Random_Buffer.Random(Gb));
+         delay Random_Time_B;
+      end Wait_Buffer;
+         
 
       procedure Setup_Variables is
       begin
@@ -195,6 +209,7 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
             or --spotaknie selektywne
          accept Deliver(Assembly: in Assembly_Type; Number: out Integer) do
             if Can_Deliver(Assembly) then
+               Wait_Buffer;  
                Put_Line(ESC & "[91m" & "B: Delivered assembly " & Assembly_Name(Assembly) & " number " &
                           Integer'Image(Assembly_Number(Assembly))& ESC & "[0m");
                for W in Producer_Type loop
@@ -203,6 +218,7 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
                end loop;
                Number := Assembly_Number(Assembly);
                Assembly_Number(Assembly) := Assembly_Number(Assembly) + 1;
+                            
             else
                Put_Line(ESC & "[91m" & "B: Lacking products for assembly " & Assembly_Name(Assembly)& ESC & "[0m");
                Number := 0;

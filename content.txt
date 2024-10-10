@@ -1,0 +1,1668 @@
+C:\Users\marti\OneDrive\Dokumenty\GitHub\Simulation_ADA\obj\main.exe
+B: Buffer started
+P: Started producer of Keychain                      
+P: Started producer of Socks                         
+P: Started producer of T-shirt                       
+P: Started producer of Mousepad                      
+P: Started producer of Mousepad Deluxe               
+C: Started consumer Consumer1
+C: Started consumer Consumer2
+P: Produced product Mousepad                       number  1
+P: Produced product T-shirt                        number  1
+B: Accepted product Mousepad                       number  1
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  0 Socks                         
+|   Storage contents:  0 T-shirt                       
+|   Storage contents:  1 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  1
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  0 Socks                         
+|   Storage contents:  0 T-shirt                       
+|   Storage contents:  1 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  1
+B: Accepted product T-shirt                        number  1
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  0 Socks                         
+|   Storage contents:  1 T-shirt                       
+|   Storage contents:  1 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  2
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  0 Socks                         
+|   Storage contents:  1 T-shirt                       
+|   Storage contents:  1 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  2
+P: Produced product Socks                          number  1
+P: Produced product Mousepad                       number  2
+B: Accepted product Socks                          number  1
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  1 T-shirt                       
+|   Storage contents:  1 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  3
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  1 T-shirt                       
+|   Storage contents:  1 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  3
+B: Accepted product Mousepad                       number  2
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  1 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  4
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  1 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  4
+P: Produced product T-shirt                        number  2
+P: Produced product Mousepad Deluxe                number  1
+B: Accepted product T-shirt                        number  2
+P: Produced product Keychain                       number  1
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  5
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  0 Mousepad Deluxe               
+|   Number of products in storage:  5
+B: Accepted product Mousepad Deluxe                number  1
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  1 Mousepad Deluxe               
+|   Number of products in storage:  6
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  1 Mousepad Deluxe               
+|   Number of products in storage:  6
+B: Accepted product Keychain                       number  1
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  1 Mousepad Deluxe               
+|   Number of products in storage:  7
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  1 Mousepad Deluxe               
+|   Number of products in storage:  7
+P: Produced product Mousepad Deluxe                number  2
+P: Produced product Socks                          number  2
+B: Lacking products for assembly Deluxe                        
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  1 Mousepad Deluxe               
+|   Number of products in storage:  7
+B: Accepted product Mousepad Deluxe                number  2
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  8
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  8
+B: Accepted product Socks                          number  2
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  9
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  9
+C: Consumer1 as there are no products in storage can not take assembly Deluxe                        
+P: Produced product Keychain                       number  2
+B: Accepted product Keychain                       number  2
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  2 Socks                         
+P: Produced product Mousepad                       number  3
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  10
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  10
+B: Accepted product Mousepad                       number  3
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  3 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  11
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  3 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  11
+P: Produced product T-shirt                        number  3
+P: Produced product Socks                          number  3
+P: Produced product Mousepad Deluxe                number  3
+P: Produced product Mousepad                       number  4
+P: Produced product Keychain                       number  3
+Consumer waited too long. Does not want it anymore.
+B: Delivered assembly Deluxe                         number  1
+|   Storage contents:  1 Keychain                      
+C: Consumer2 takes assembly Deluxe                         number  1
+|   Storage contents:  0 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  7
+B: Accepted product T-shirt                        number  3
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  0 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  8
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  0 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  8
+B: Accepted product Socks                          number  3
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  9
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  2 Mousepad Deluxe               
+|   Number of products in storage:  9
+B: Accepted product Mousepad Deluxe                number  3
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  10
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  2 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  10
+B: Accepted product Mousepad                       number  4
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  3 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  11
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  3 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  11
+B: Accepted product Keychain                       number  3
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  3 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  12
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  3 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  12
+P: Produced product Mousepad                       number  5
+B: Accepted product Mousepad                       number  5
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  4 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  13
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  4 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  13
+P: Produced product Mousepad Deluxe                number  4
+P: Produced product T-shirt                        number  4
+B: Accepted product Mousepad Deluxe                number  4
+P: Produced product Socks                          number  4
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  4 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  14
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  4 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  14
+B: Accepted product T-shirt                        number  4
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  4 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  15
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  1 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  4 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  15
+B: Accepted product Socks                          number  4
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  4 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  16
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  4 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  16
+P: Produced product Mousepad                       number  6
+B: Accepted product Mousepad                       number  6
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  17
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  17
+P: Produced product Keychain                       number  4
+P: Produced product T-shirt                        number  5
+B: Accepted product Keychain                       number  4
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  18
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  18
+B: Accepted product T-shirt                        number  5
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  19
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  19
+P: Produced product Mousepad Deluxe                number  5
+P: Produced product Socks                          number  5
+P: Produced product T-shirt                        number  6
+P: Produced product Keychain                       number  5
+B: Accepted product Mousepad Deluxe                number  5
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  20
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  2 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  20
+B: Accepted product Socks                          number  5
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  21
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  21
+B: Accepted product T-shirt                        number  6
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  22
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  22
+B: Accepted product Keychain                       number  5
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  23
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  5 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  23
+P: Produced product Mousepad                       number  7
+B: Accepted product Mousepad                       number  7
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  6 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  24
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  6 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  24
+P: Produced product Mousepad                       number  8
+B: Accepted product Mousepad                       number  8
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  7 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  25
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  7 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  25
+P: Produced product Mousepad Deluxe                number  6
+P: Produced product Socks                          number  6
+B: Accepted product Mousepad Deluxe                number  6
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  7 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  26
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  7 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  26
+B: Accepted product Socks                          number  6
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  7 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  27
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  7 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  27
+P: Produced product Mousepad                       number  9
+B: Accepted product Mousepad                       number  9
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  8 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  6 T-shirt                       
+|   Storage contents:  8 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+P: Produced product T-shirt                        number  7
+P: Produced product Keychain                       number  6
+P: Produced product Mousepad Deluxe                number  7
+Consumer waited too long. Does not want it anymore.
+P: Produced product Mousepad                       number  10
+P: Produced product Socks                          number  7
+B: Delivered assembly Basic                          number  1
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  8 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+C: Consumer2 takes assembly Basic                          number  1
+|   Number of products in storage:  21
+B: Accepted product T-shirt                        number  7
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  8 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  22
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  8 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  22
+B: Accepted product Keychain                       number  6
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  8 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  23
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  8 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  23
+B: Accepted product Mousepad Deluxe                number  7
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  8 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  24
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  8 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  24
+B: Accepted product Mousepad                       number  10
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  25
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  25
+B: Accepted product Socks                          number  7
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  26
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  26
+P: Produced product Mousepad Deluxe                number  8
+P: Produced product Socks                          number  8
+B: Accepted product Mousepad Deluxe                number  8
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  27
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  27
+B: Accepted product Socks                          number  8
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+P: Produced product Keychain                       number  7
+B: Accepted product Keychain                       number  7
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  29
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  29
+P: Produced product Mousepad Deluxe                number  9
+B: Accepted product Mousepad Deluxe                number  9
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Mousepad                       number  11
+P: Produced product T-shirt                        number  8
+P: Produced product Socks                          number  9
+P: Produced product Mousepad Deluxe                number  10
+B: Delivered assembly Basic                          number  2
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  23
+C: Consumer1 takes assembly Basic                          number  2
+B: Accepted product T-shirt                        number  8
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  24
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  9 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  24
+B: Accepted product Mousepad                       number  11
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  25
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  25
+B: Accepted product Socks                          number  9
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  26
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  26
+B: Accepted product Mousepad Deluxe                number  10
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  27
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  27
+P: Produced product Keychain                       number  8
+B: Accepted product Keychain                       number  8
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+P: Produced product Keychain                       number  9
+B: Accepted product Keychain                       number  9
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  29
+|   Storage contents:  4 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  29
+P: Produced product T-shirt                        number  9
+P: Produced product Mousepad                       number  12
+P: Produced product Mousepad Deluxe                number  11
+P: Produced product Socks                          number  10
+P: Produced product Keychain                       number  10
+B: Delivered assembly Premium Deluxe                 number  1
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  21
+B: Accepted product T-shirt                        number  9
+C: Consumer2 takes assembly Premium Deluxe                 number  1
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  22
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  10 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  22
+B: Accepted product Mousepad                       number  12
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  23
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  23
+B: Accepted product Mousepad Deluxe                number  11
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  24
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  24
+B: Accepted product Socks                          number  10
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  25
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  25
+B: Accepted product Keychain                       number  10
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  26
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  26
+P: Produced product T-shirt                        number  10
+P: Produced product Socks                          number  11
+P: Produced product Mousepad                       number  13
+B: Delivered assembly Basic                          number  3
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  1 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  19
+C: Consumer1 takes assembly Basic                          number  3
+B: Accepted product T-shirt                        number  10
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  20
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  20
+B: Accepted product Socks                          number  11
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  21
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  11 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  21
+B: Accepted product Mousepad                       number  13
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  22
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  22
+P: Produced product Mousepad Deluxe                number  12
+P: Produced product Keychain                       number  11
+B: Accepted product Mousepad Deluxe                number  12
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  23
+|   Storage contents:  0 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  23
+B: Accepted product Keychain                       number  11
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  24
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  24
+P: Produced product T-shirt                        number  11
+B: Accepted product T-shirt                        number  11
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  25
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  25
+P: Produced product Keychain                       number  12
+B: Accepted product Keychain                       number  12
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  26
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  26
+P: Produced product Socks                          number  12
+P: Produced product Mousepad                       number  14
+B: Accepted product Socks                          number  12
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  27
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  27
+B: Accepted product Mousepad                       number  14
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  28
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  28
+P: Produced product T-shirt                        number  12
+B: Accepted product T-shirt                        number  12
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  29
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  29
+P: Produced product Keychain                       number  13
+P: Produced product Mousepad Deluxe                number  13
+B: Accepted product Keychain                       number  13
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Mousepad Deluxe                number  13
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Socks                          number  13
+B: Rejected product Socks                          number  13
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  3 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Keychain                       number  14
+P: Produced product Socks                          number  14
+P: Produced product Mousepad Deluxe                number  14
+P: Produced product Mousepad                       number  15
+P: Produced product T-shirt                        number  13
+Consumer waited too long. Does not want it anymore.
+B: Delivered assembly Basic                          number  4
+|   Storage contents:  1 Keychain                      
+C: Consumer2 takes assembly Basic                          number  4
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  23
+B: Accepted product Keychain                       number  14
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  24
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  24
+B: Accepted product Socks                          number  14
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  25
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  3 Mousepad Deluxe               
+|   Number of products in storage:  25
+B: Accepted product Mousepad Deluxe                number  14
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  26
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  26
+B: Accepted product Mousepad                       number  15
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  27
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  2 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  27
+B: Accepted product T-shirt                        number  13
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  28
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  4 Mousepad Deluxe               
+|   Number of products in storage:  28
+P: Produced product Mousepad Deluxe                number  15
+P: Produced product Socks                          number  15
+B: Accepted product Mousepad Deluxe                number  15
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  29
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  29
+B: Accepted product Socks                          number  15
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product T-shirt                        number  14
+P: Produced product Keychain                       number  15
+P: Produced product Mousepad                       number  16
+B: Rejected product T-shirt                        number  14
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Keychain                       number  15
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Mousepad                       number  16
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Socks                          number  16
+B: Rejected product Socks                          number  16
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Mousepad                       number  17
+B: Rejected product Mousepad                       number  17
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Mousepad Deluxe                number  16
+B: Rejected product Mousepad Deluxe                number  16
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product T-shirt                        number  15
+B: Rejected product T-shirt                        number  15
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Keychain                       number  16
+B: Rejected product Keychain                       number  16
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Mousepad                       number  18
+P: Produced product T-shirt                        number  16
+B: Rejected product Mousepad                       number  18
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product T-shirt                        number  16
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Socks                          number  17
+B: Rejected product Socks                          number  17
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  6 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  14 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Keychain                       number  17
+Consumer waited too long. Does not want it anymore.
+P: Produced product Mousepad Deluxe                number  17
+P: Produced product Socks                          number  18
+P: Produced product T-shirt                        number  17
+B: Delivered assembly Deluxe                         number  2
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  26
+B: Accepted product Keychain                       number  17
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  27
+|   Storage contents:  2 Keychain                      
+C: Consumer2 takes assembly Deluxe                         number  2
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  5 Mousepad Deluxe               
+|   Number of products in storage:  27
+B: Accepted product Mousepad Deluxe                number  17
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+B: Accepted product Socks                          number  18
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  29
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  3 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  29
+B: Accepted product T-shirt                        number  17
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Mousepad                       number  19
+B: Rejected product Mousepad                       number  19
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Keychain                       number  18
+B: Rejected product Keychain                       number  18
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Mousepad Deluxe                number  18
+B: Rejected product Mousepad Deluxe                number  18
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Socks                          number  19
+B: Rejected product Socks                          number  19
+P: Produced product T-shirt                        number  18
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product T-shirt                        number  18
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Keychain                       number  19
+B: Rejected product Keychain                       number  19
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Mousepad                       number  20
+B: Rejected product Mousepad                       number  20
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  5 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  13 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Socks                          number  20
+P: Produced product Mousepad Deluxe                number  19
+P: Produced product T-shirt                        number  19
+P: Produced product Keychain                       number  20
+Consumer waited too long. Does not want it anymore.
+P: Produced product Mousepad                       number  21
+B: Delivered assembly Deluxe                         number  3
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  4 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  26
+B: Accepted product T-shirt                        number  19
+C: Consumer2 takes assembly Deluxe                         number  3
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  27
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  3 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  27
+B: Accepted product Socks                          number  20
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  6 Mousepad Deluxe               
+|   Number of products in storage:  28
+B: Accepted product Mousepad Deluxe                number  19
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  29
+|   Storage contents:  1 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  29
+B: Accepted product Keychain                       number  20
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Mousepad                       number  21
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product T-shirt                        number  20
+P: Produced product Mousepad Deluxe                number  20
+P: Produced product Mousepad                       number  22
+B: Rejected product T-shirt                        number  20
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Mousepad                       number  22
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Mousepad Deluxe                number  20
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Mousepad                       number  23
+P: Produced product Socks                          number  21
+P: Produced product T-shirt                        number  21
+B: Rejected product Mousepad                       number  23
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product T-shirt                        number  21
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Socks                          number  21
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Socks                          number  22
+P: Produced product T-shirt                        number  22
+B: Rejected product Socks                          number  22
+P: Produced product Keychain                       number  21
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product T-shirt                        number  22
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Keychain                       number  21
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+P: Produced product Keychain                       number  22
+P: Produced product T-shirt                        number  23
+P: Produced product Socks                          number  23
+B: Rejected product Keychain                       number  22
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+P: Produced product Mousepad Deluxe                number  21
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+P: Produced product Mousepad                       number  24
+|   Number of products in storage:  30
+B: Rejected product T-shirt                        number  23
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Socks                          number  23
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Mousepad Deluxe                number  21
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+B: Rejected product Mousepad                       number  24
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
+|   Storage contents:  2 Keychain                      
+|   Storage contents:  4 Socks                         
+|   Storage contents:  5 T-shirt                       
+|   Storage contents:  12 Mousepad                      
+|   Storage contents:  7 Mousepad Deluxe               
+|   Number of products in storage:  30
