@@ -48,30 +48,65 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
    B: Buffer;
 
    task body Producer is
-      subtype Production_Time_Range is Integer range 1 .. 3;
-      package Random_Production is new Ada.Numerics.Discrete_Random(Production_Time_Range);
-      G: Random_Production.Generator;
-      Producer_Type_Number: Integer;
-      Product_Number: Integer;
-      Production: Integer;
-      Random_Time: Duration;
-   begin
-      accept Start(Product: in Producer_Type; Production_Time: in Integer) do
-         Random_Production.Reset(G);
-         Product_Number := 1;
-         Producer_Type_Number := Product;
-         Production := Production_Time;
-      end Start;
-      Put_Line(ESC & "[93m" & "P: Started producer of " & Product_Name(Producer_Type_Number) & ESC & "[0m");
-      loop
+   subtype Production_Time_Range is Integer range 1 .. 3;
+   package Random_Production is new Ada.Numerics.Discrete_Random(Production_Time_Range);
+   G: Random_Production.Generator;
+   Producer_Type_Number: Integer;
+   Product_Number: Integer;
+   Production: Integer;
+   Random_Time: Duration;
+   In_Storage_Count: Integer := 0;
+begin
+   accept Start(Product: in Producer_Type; Production_Time: in Integer) do
+      Random_Production.Reset(G);
+      Product_Number := 1;
+      Producer_Type_Number := Product;
+      Production := Production_Time;
+   end Start;
+   Put_Line(ESC & "[93m" & "P: Started producer of " & Product_Name(Producer_Type_Number) & ESC & "[0m");
+   loop
+      if In_Storage_Count > 0 then
+         Random_Time := Duration(Random_Production.Random(G)) / 3.0;
+      else
          Random_Time := Duration(Random_Production.Random(G));
-         delay Random_Time;
-         Put_Line(ESC & "[93m" & "P: Produced product " & Product_Name(Producer_Type_Number)
-                  & " number "  & Integer'Image(Product_Number) & ESC & "[0m");
+      end if;
+      
+      delay Random_Time;
+      Put_Line(ESC & "[93m" & "P: Produced product " & Product_Name(Producer_Type_Number)
+               & " number "  & Integer'Image(Product_Number) & ESC & "[0m");
+      select
          B.Take(Producer_Type_Number, Product_Number);
+         if In_Storage_Count > 0 then
+               In_Storage_Count := In_Storage_Count - 1;
+         end if;
+      or
+         delay 0.0;
+            In_Storage_Count := In_Storage_Count + 1;
+            case In_Storage_Count is
+            when 1 =>
+               Put_Line(ESC & "[93m" & "P: To storage went " & Integer'Image(In_Storage_Count) & "st product: " & Product_Name(Producer_Type_Number)
+                        & " number " & Integer'Image(Product_Number) & ESC & "[0m");
+            when 2 =>
+               Put_Line(ESC & "[93m" & "P: To storage went " & Integer'Image(In_Storage_Count) & "nd product: " & Product_Name(Producer_Type_Number)
+                        & " number " & Integer'Image(Product_Number) & ESC & "[0m");
+            when 3 =>
+               Put_Line(ESC & "[93m" & "P: To storage went " & Integer'Image(In_Storage_Count) & "rd product: " & Product_Name(Producer_Type_Number)
+                        & " number " & Integer'Image(Product_Number) & ESC & "[0m");
+            when others =>
+               Put_Line(ESC & "[93m" & "P: To storage went " & Integer'Image(In_Storage_Count) & "th product: " & Product_Name(Producer_Type_Number)
+                        & " number " & Integer'Image(Product_Number) & ESC & "[0m");
+            end case;
+
+      end select;
          Product_Number := Product_Number + 1;
-      end loop;
-   end Producer;
+         if In_Storage_Count>3 then
+               Put_Line(ESC & "[93m" & "P: On vacation went producer " & Product_Name(Producer_Type_Number)
+                         & ESC & "[0m");
+            delay 3.0; --producer can rest, he has products
+         end if;
+         end loop;
+end Producer;
+
 
    task body Consumer is
       subtype Consumption_Time_Range is Integer range 4 .. 8;
@@ -90,6 +125,7 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
       Consumer_Name: constant array (1 .. Number_Of_Consumers)
         of String(1 .. 12)
         := ("MEDIA EXPERT", "RTV EURO AGD");
+      Consumer_Happy: Boolean;
    begin
       accept Start(Consumer_Number: in Consumer_Type;
                    Consumption_Time: in Integer) do
@@ -100,7 +136,12 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
       end Start;
       Put_Line(ESC & "[96m" & "C: Started consumer " & Consumer_Name(Consumer_Nb) & ESC & "[0m");
       loop
-         delay Duration(Random_Consumption.Random(G)); --  simulate consumption
+         if Consumer_Happy then
+            delay Duration(Random_Consumption.Random(G))/3.0; --  simulate consumption
+                  Consumer_Happy := FALSE;
+         else
+            delay Duration(Random_Consumption.Random(G));
+         end if;
          Assembly_Type := Random_Assembly.Random(GA);
          select --spotkanie selektywne z przeterminowaniem
          B.Deliver(Assembly_Type, Assembly_Number);
@@ -108,6 +149,7 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
          Put_Line(ESC & "[96m" & "C: " & Consumer_Name(Consumer_Nb) & " takes assembly " &
                     Assembly_Name(Assembly_Type) & " number " &
                     Integer'Image(Assembly_Number) & ESC & "[0m");
+                     Consumer_Happy := TRUE;
             else
           Put_Line(ESC & "[96m" & "C: " & Consumer_Name(Consumer_Nb) & " as there are no products in storage can not take assembly " &
                     Assembly_Name(Assembly_Type) & ESC & "[0m");
@@ -115,7 +157,6 @@ Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
          or --spotkanie selektywne z przeterminowaniem
             delay 2.0;
             Put_Line("Consumer waited too long. Does not want it anymore.");
-            --musi jakos chyba usuwac ta prosbe - nie dzala
          end select; --spotkanie selektywne z przeterminowaniem
       end loop;
    end Consumer;
