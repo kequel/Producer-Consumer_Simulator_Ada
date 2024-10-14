@@ -137,7 +137,7 @@ end Producer;
       Put_Line(ESC & "[96m" & "C: Started consumer " & Consumer_Name(Consumer_Nb) & ESC & "[0m");
       loop
          if Consumer_Happy then
-            delay Duration(Random_Consumption.Random(G))/3.0; --  simulate consumption
+            delay Duration(Random_Consumption.Random(G))/2.0; --  simulate consumption
                   Consumer_Happy := FALSE;
          else
             delay Duration(Random_Consumption.Random(G));
