@@ -22,11 +22,11 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
-RV MAX_SELECT_ALTERNATIVES=2
+RV MAX_SELECT_ALTERNATIVES=3
 RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 
-U simulation%b		main.adb		f9c01969 NE OO SU
+U simulation%b		main.adb		0d83dcad NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 W ada.characters%s	a-charac.ads		a-charac.ali
@@ -77,7 +77,7 @@ D interfac.ads		20210520051132 edec285f interfaces%s
 D i-c.ads		20210520051132 d9beded9 interfaces.c%s
 D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20241014154124 9ebee762 simulation%b
+D main.adb		20241014164732 6afd22a6 simulation%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atacco.ads		20210520051132 4c36d12f system.address_to_access_conversions%s
 D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
@@ -122,129 +122,145 @@ D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D s-win32.ads		20210520051136 15ac53fb system.win32%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [simulation standard 7 11 none]
+G c Z b b [simulation standard 6 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 26|1r6 1r23 2r6 2r34 3r6 4r6 52r37 114r9 117r9 166r36
+16K9*Ada 20e8 26|1r6 1r23 2r6 2r34 3r6 4r6 54r37 69r40 129r9 132r9 181r36
 X 4 a-charac.ads
 16K13*Characters 18e19 26|2r10 2r38
 X 5 a-chlat1.ads
 18K24*Latin_1 296e27 26|2w21 2r49
-53e4*ESC{character} 26|66r13 66r93 75r16 76r64 87r25 88r72 90r25 91r72 93r25
-. 94r72 96r25 97r72 103r25 104r28 137r16 137r85 149r19 151r54 154r20 155r52
-. 265r16 265r53 271r25 272r50 276r25 277r50 285r25 286r69 295r25 295r103
+53e4*ESC{character} 26|83r16 83r96 92r19 93r67 104r31 105r78 107r31 108r78
+. 110r31 111r78 113r31 114r78 119r22 120r24 152r16 152r85 164r25 166r59 169r25
+. 170r57 273r16 273r53 279r28 280r53 284r28 285r53 293r28 294r72 302r28 302r107
+. 309r28 309r121 315r28 315r126
 X 8 a-inteio.ads
 18K13*Integer_Text_IO[20|46] 26|3w10
 X 10 a-numeri.ads
-16K13*Numerics 35e17 26|4r10 52r41 114r13 117r13 166r40
+16K13*Numerics 35e17 26|4r10 54r41 69r44 129r13 132r13 181r40
 X 11 a-nudira.ads
-44k22*Discrete_Random 81e33 26|4w19 52r50 114r22 117r22 166r49
-50R9 Generator<45|65R9> 26|53r25[52] 119r29[113] 120r27[116] 167r25[166]
-52V13 Random{integer} 26|69s52[52] 71s52[52] 140s47[113] 143s47[113] 145s43[116]
-. 193s48[166]
-61U14 Reset<45|103p14> 26|61s25[52] 132s29[113] 133s26[116] 192s24[166]
+44k22*Discrete_Random 81e33 26|4w19 54r50 69r53 129r22 132r22 181r49
+50R9 Generator<45|65R9> 26|55r26[54] 70r28[69] 134r29[128] 135r27[131] 182r25[181]
+52V13 Random{integer} 26|61s55[54] 86s55[69] 88s55[69] 155s47[128] 158s47[128]
+. 160s43[131] 205s50[181]
+61U14 Reset<45|103p14> 26|60s28[54] 78s28[69] 147s29[128] 148s26[131] 204s24[181]
 X 12 a-nudira.adb
-53V16 Random[45|86]{integer} 46|402b13[26|116]
-65V16 Random[45|86]{integer} 46|402b13[26|166]
+53V16 Random[45|86]{integer} 46|402b13[26|54]
+65V16 Random[45|86]{integer} 46|402b13[26|131]
 X 19 a-textio.ads
 58K13*Text_IO 725e16 26|1w10 1r27
-506U14*Put_Line 26|66s4 75s7 87s16 90s16 93s16 96s16 103s16 137s7 149s10
-. 154s11 159s13 257s13 260s10 265s7 271s16 276s16 285s16 295s16
+506U14*Put_Line 26|83s7 92s10 104s22 107s22 110s22 113s22 119s13 152s7 164s16
+. 169s16 174s13 267s13 269s10 273s7 279s19 284s19 293s19 302s19 309s19 315s19
 X 22 interfac.ads
 79M9*Unsigned_32
 82M9*Unsigned_64
 X 26 main.adb
-7U11*Simulation 7b11 312l5 312t15
-9i4 Number_Of_Producers{integer} 13r48 46r20 306r18
-10i4 Number_Of_Assemblies{integer} 14r48
-11i4 Number_Of_Consumers{integer} 15r48 47r20 125r43 309r18
-13I12 Producer_Type{integer} 18r31 31r31 41r30 60r29 177r35 180r46 184r35
-. 200r19 210r33 246r19 256r19 269r34 287r25
-14I12 Assembly_Type{integer} 25r32 43r34 117r38 180r31 185r30 202r22 244r38
-. 282r38
-15I12 Consumer_Type{integer} 35r39 121r20 130r40
-18a1 Product_Name(string) 66r56 75r56 87r115 90r115 93r115 96r115 103r74
-. 258r24 271r65 276r65
-25a1 Assembly_Name(string) 150r21 155r21 285r67 295r78
-30T14 Producer 32l8 32e16 46r45 50b14 108l5 108t13
-31Y13 Start 31>19 31>46 60b11 65l8 65t13 307s12
-31i19 Product{13I12} 63r31
-31i46 Production_Time{integer} 64r21
-34T14 Consumer 37l8 37e16 47r45 111b14 162l8 162t16
-35Y13 Start 35>19 36>19 130b14 136l11 136t16 310s12
-35i19 Consumer_Number{15I12} 134r25
-36i19 Consumption_Time{integer} 135r25
-39T14 Buffer 44l8 44e14 48r7 164b14 303l8 303t14
-41Y13 Take 41>18 41>45 78s12 269b17 279l14 279t18
-41i18 Product{13I12} 270r27 271r78 273r24 273r44 276r78
-41i45 Number{integer} 272r41 277r41
-43Y13 Deliver 43>21 43<49 147s12 282b17 298l17 298t24
-43i21 Assembly{14I12} 283r28 285r81 286r57 288r63 289r63 291r42 292r32 292r61
-. 295r92
-43i49 Number{integer} 291m16 291r16 296m16 296r16
-46a4 P(30T14) 307r7
-47a4 K(34T14) 310r7
-48t4 B{39T14} 78r10 147r10
-51I12 Production_Time_Range{integer} 52r66
-52K12 Random_Production[11|44] 53r7 61r7 69r34 71r34
-53r4 G{11|50R9[52]} 61r31 69r59 71r59
-54i4 Producer_Type_Number{integer} 63m7 66r69 75r69 78r17 87r128 90r128 93r128
-. 96r128 103r87
-55i4 Product_Number{integer} 62m7 76r46 78r39 88r54 91r54 94r54 97r54 101m10
-. 101r28
-56i4 Production{integer} 64m7
-57o4 Random_Time{duration} 69m10 71m10 74r13
-58i4 In_Storage_Count{integer} 68r10 79r13 80m16 80r36 84m13 84r33 85r18
-. 87r78 90r78 93r78 96r78 102r13
-60i17 Product{13I12}
-60i44 Production_Time{integer}
-112I15 Consumption_Time_Range{integer} 114r38
-113K15 Random_Consumption[11|44] 119r10 132r10 140r28 143r28
-116K15 Random_Assembly[11|44] 120r11 133r10 145r27
-119r7 G{11|50R9[113]} 132r35 140r54 143r54
-120r7 GA{11|50R9[116]} 133r32 145r50
-121i7 Consumer_Nb{15I12} 134m10 137r70 149r56 154r57
-122i7 Assembly_Number{integer} 147m35 148r16 151r35
-123i7 Consumption{integer} 135m10
-124i7 Assembly_Type{integer} 145m10 147r20 150r35 155r35
-125a7 Consumer_Name(string) 137r56 149r42 154r43
-128b7 Consumer_Happy{boolean} 139r13 141m19 152m22
-130i20 Consumer_Number{15I12}
-131i20 Consumption_Time{integer}
-165I15 Buffer_Time_Range{integer} 166r65
-166K15 Random_Buffer[11|44] 167r11 192r10 193r34
-167r7 Gb{11|50R9[166]} 192r30 193r55
-168o7 Random_Time_B{duration} 193m10 194r16
-170i7 Storage_Capacity{integer} 212r24
-171i7 Keychain_Max{integer} 217r38
-172i7 Socks_Max{integer} 221r38
-173i7 Tshirt_Max{integer} 225r38
-174i7 Mousepad_Max{integer} 229r38
-175i7 MousepadDeluxe_Max{integer} 233r38
-177A12 Storage_type(integer)<integer> 178r16
-178a7 Storage{177A12} 217r19 221r19 225r19 229r19 233r19 247r16 257r63 273m16
-. 273r36 288m19 288r33
-180a7 Assembly_Content(integer) 203r19 204r46 247r29 288r46 289r46
-184a7 Max_Assembly_Content(integer) 201m13 203r44 204m19
-185a7 Assembly_Number(integer) 286r41 291r26 292m16 292r45
-187i7 In_Storage{integer} 212r10 260r73 274m16 274r30 289m19 289r33
-190U17 Wait_Buffer 190b17 195l11 195t22 284s16
-198U17 Setup_Variables 198b17 208l11 208t26 266s7
-200i14 W{13I12} 201r34 203r39 203r65 204r40 204r66
-202i17 Z{14I12} 203r36 204r63
-210V13 Can_Accept{boolean} 210b13 210>24 241l8 241t18 270s16
-210i24 Product{13I12} 215r15 217r27 221r27 225r27 229r27 233r27
-244V16 Can_Deliver{boolean} 244b16 244>28 252l11 252t22 283s16
-244i28 Assembly{14I12} 247r46
-246i14 W{13I12} 247r24 247r56
-254U17 Storage_Contents 254b17 262l11 262t27 280s13 300s10
-256i14 W{13I12} 257r71 258r37
-269i22 Product{13I12}
-269i49 Number{integer}
-282i25 Assembly{14I12}
-282i53 Number{integer}
-287i20 W{13I12} 288r27 288r41 288r73 289r73
-306i8 I{integer} 307r9 307r18
-309i8 J{integer} 310r9 310r18
+6U11*Simulation 6b11 341l5 341t15
+8i4 Number_Of_Producers{integer} 12r48 47r20 324r18
+9i4 Number_Of_Assemblies{integer} 13r48
+10i4 Number_Of_Consumers{integer} 14r48 48r20 140r43 327r18
+12I12 Producer_Type{integer} 16r34 29r31 38r30 77r32 192r35 194r46 198r35
+. 211r19 221r36 256r19 266r19 277r37 295r28 310r29
+13I12 Assembly_Type{integer} 23r35 39r34 132r38 194r31 199r30 213r22 254r38
+. 290r41
+14I12 Consumer_Type{integer} 33r39 136r20 145r40
+16a4 Product_Name(string) 83r59 92r59 104r121 107r121 110r121 113r121 119r71
+. 267r83 279r68 284r68
+23a4 Assembly_Name(string) 165r26 170r26 293r70 302r81
+28T14 Producer 30l8 30e16 47r45 67b14 124l8 124t16
+29Y13 Start 29>19 29>46 77b14 82l11 82t16 325s12
+29i19 Product{12I12} 80r34
+29i46 Production_Time{integer} 81r24
+32T14 Consumer 35l8 35e16 48r45 126b14 177l8 177t16
+33Y13 Start 33>19 34>19 145b14 151l11 151t16 328s12
+33i19 Consumer_Number{14I12} 149r25
+34i19 Consumption_Time{integer} 150r25
+37T14 Buffer 41l8 41e14 49r7 179b14 321l8 321t14
+38Y13 Take 38>18 38>45 95s15 277b20 287l17 287t21
+38i18 Product{12I12} 278r30 279r81 281r27 281r47 284r81
+38i45 Number{integer} 280r43 285r43
+39Y13 Deliver 39>21 39<49 162s15 290b20 305l17 305t24
+39i21 Assembly{13I12} 291r31 293r84 294r59 296r66 297r66 299r45 300r35 300r64
+. 302r95
+39i49 Number{integer} 299m19 299r19 303m19 303r19
+40Y13 Nobel_Gift 40>24 307b20 317l17 317t27 336s12
+40i24 Charity_Level{integer} 308r19 309r104 315r109
+43T14 CharityEvent 45l8 45e20 50r7 52b14 65l8 65t20
+44Y13 Start 44<19 59b17 63l14 63t19 335s12
+44i19 Level{integer} 62m13 62r13
+47a4 P(28T14) 325r7
+48a4 K(32T14) 328r7
+49t4 B{37T14} 95r13 162r13 336r10
+50t4 C{43T14} 335r10
+53I15 Charity_Level_Range{integer} 54r66
+54K15 Random_Charity[11|44] 55r11 60r13 61r40
+55r7 GC{11|50R9[54]} 60r34 61r62
+56i7 goodness_of_heart_level{integer} 61m13 62r22
+59i23 Level{integer}
+68I15 Production_Time_Range{integer} 69r69
+69K15 Random_Production[11|44] 70r10 78r10 86r37 88r37
+70r7 G{11|50R9[69]} 78r34 86r62 88r62
+71i7 Producer_Type_Number{integer} 80m10 83r72 92r72 95r20 104r134 107r134
+. 110r134 113r134 119r84
+72i7 Product_Number{integer} 79m10 93r49 95r42 105r60 108r60 111r60 114r60
+. 117m10 117r28
+73i7 Production{integer} 81m10
+74o7 Random_Time{duration} 86m13 88m13 91r16
+75i7 In_Storage_Count{integer} 85r13 96r16 97m16 97r36 101m16 101r36 102r21
+. 104r84 107r84 110r84 113r84 118r13
+77i20 Product{12I12}
+77i47 Production_Time{integer}
+127I15 Consumption_Time_Range{integer} 129r38
+128K15 Random_Consumption[11|44] 134r10 147r10 155r28 158r28
+131K15 Random_Assembly[11|44] 135r11 148r10 160r27
+134r7 G{11|50R9[128]} 147r35 155r54 158r54
+135r7 GA{11|50R9[131]} 148r32 160r50
+136i7 Consumer_Nb{14I12} 149m10 152r70 164r62 169r62
+137i7 Assembly_Number{integer} 162m38 163r16 166r40
+138i7 Consumption{integer} 150m10
+139i7 Assembly_Type{integer} 160m10 162r23 165r40 170r40
+140a7 Consumer_Name(string) 152r56 164r48 169r48
+143b7 Consumer_Happy{boolean} 154r13 156m13 167m16
+145i20 Consumer_Number{14I12}
+146i20 Consumption_Time{integer}
+180I15 Buffer_Time_Range{integer} 181r65
+181K15 Random_Buffer[11|44] 182r11 204r10 205r36
+182r7 Gb{11|50R9[181]} 204r30 205r57
+183o7 Random_Time_B{duration} 205m10 206r16
+185i7 Storage_Capacity{integer} 223r27
+186i7 Keychain_Max{integer} 228r41
+187i7 Socks_Max{integer} 232r41
+188i7 Tshirt_Max{integer} 236r41
+189i7 Mousepad_Max{integer} 240r41
+190i7 MousepadDeluxe_Max{integer} 244r41
+192A12 Storage_type(integer)<integer> 193r16
+193a7 Storage{192A12} 228r22 232r22 236r22 240r22 244r22 257r16 267r63 281m19
+. 281r39 296m22 296r36 311m22 311r36 312r50
+194a7 Assembly_Content(integer) 214r19 215r46 257r29 296r49 297r49
+198a7 Max_Assembly_Content(integer) 212m13 214r44 215m19
+199a7 Assembly_Number(integer) 294r43 299r29 300m19 300r48
+200i7 In_Storage{integer} 223r13 269r73 282m19 282r33 297m22 297r36 312m22
+. 312r36
+202U17 Wait_Buffer 202b17 207l11 207t22 292s19
+209U17 Setup_Variables 209b17 219l11 219t26 274s7
+211i14 W{12I12} 212r34 214r39 214r65 215r40 215r66
+213i17 Z{13I12} 214r36 215r63
+221V16 Can_Accept{boolean} 221b16 221>27 252l11 252t21 278s19
+221i27 Product{12I12} 226r18 228r30 232r30 236r30 240r30 244r30
+254V16 Can_Deliver{boolean} 254b16 254>28 262l11 262t22 291s19
+254i28 Assembly{13I12} 257r46
+256i14 W{12I12} 257r24 257r56
+264U17 Storage_Contents 264b17 270l11 270t27 288s13 319s10
+266i14 W{12I12} 267r71 267r96
+277i25 Product{12I12}
+277i52 Number{integer}
+290i28 Assembly{13I12}
+290i56 Number{integer}
+295i23 W{12I12} 296r30 296r44 296r76 297r76
+307i31 Charity_Level{integer}
+310i24 W{12I12} 311r30 311r44 312r58
+324i8 I{integer} 325r9 325r18
+327i8 J{integer} 328r9 328r18
+333i10 Charity_Level{integer} 335m18 336r23
 X 45 s-rannum.ads
 77V13*Random{22|79M9} 46|224i21
 78V13*Random{22|82M9} 46|224i21
