@@ -41,7 +41,7 @@ procedure Simulation is
    end Buffer;
 
    task type CharityEvent is
-      entry Start(Level: out Integer);
+      entry Start(goodness_of_heart_level: out Integer);
    end CharityEvent;
 
    P: array ( 1 .. Number_Of_Producers ) of Producer;
@@ -53,13 +53,11 @@ procedure Simulation is
       subtype Charity_Level_Range is integer range 0 .. 10;
       package Random_Charity is new Ada.Numerics.Discrete_Random(Charity_Level_Range);
       GC: Random_Charity.Generator;
-      goodness_of_heart_level : integer;
    begin
       loop
-         accept Start(Level: out Integer) do
+         accept Start(goodness_of_heart_level: out Integer) do
             Random_Charity.Reset(GC);
             goodness_of_heart_level := Random_Charity.Random(GC);
-            Level := goodness_of_heart_level;
          end Start;
       end loop;
    end CharityEvent;
