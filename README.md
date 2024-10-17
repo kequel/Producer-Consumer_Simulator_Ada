@@ -1,5 +1,5 @@
 # Producer-Consumer Simulator in Ada
-This is a Producer-Consumer Assembly Simulator written in Ada, developed as part of the Programming Languages course in our third semester at Gdańsk University of Technology.
+This is a Producer-Consumer Simulator written in Ada, developed as part of the Programming Languages course in our third semester at Gdańsk University of Technology.
 
 ## Authors
 - Martyna Borkowska [GitHub](https://github.com/martynkaqhe)
