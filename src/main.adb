@@ -190,9 +190,9 @@ procedure Simulation is
       type Storage_type is array (Producer_Type) of Integer;
       Storage: Storage_type := (0, 0, 0, 0, 0);
       Assembly_Content: array(Assembly_Type, Producer_Type) of Integer
-        := ((2, 1, 2, 0, 2),
-            (1, 2, 0, 1, 0),
-            (3, 2, 2, 0, 1));
+        := ((1, 1, 0, 0, 0),
+            (1, 1, 0, 1, 0),
+            (1, 1, 1, 0, 1));
       Max_Assembly_Content: array(Producer_Type) of Integer;
       Assembly_Number: array(Assembly_Type) of Integer := (1, 1, 1);
       In_Storage: Integer := 0;
