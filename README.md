@@ -25,7 +25,7 @@ Both producers and consumers run concurrently, simulating a real-time production
 1) Each producer generates a specific type of product and places it in the storage buffer.
 2) Multiple producers work concurrently, each responsible for one type of product.
 3) When producers have more than 3 items in storage they go on vacation.
-4) When producer has item in his personal storage, production time is cut only to delivery time.\
+4) When producer has item in his personal storage, production time is cut only to delivery time.
    
 ### Consumers
 1) Consumers order random assemblies.
