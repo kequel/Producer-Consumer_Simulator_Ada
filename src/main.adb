@@ -21,9 +21,9 @@ procedure Simulation is
          "Mousepad Deluxe               ");
 
    Assembly_Name: constant array (Assembly_Type) of String(1 .. 30)
-     := ("Basic                         ", 
-         "Deluxe                        ", 
-         "Premium Deluxe                ");
+     := ("Basic                         ", --includes: Keychain, Socks, MousePad
+         "Deluxe                        ", --includes: Keychain, Socks, MousePad Deluxe
+         "Premium Deluxe                "); --includes: Keychain, Socks, T-Shirt, MousePad Deluxe
 
    task type Producer is
       entry Start(Product: in Producer_Type; Production_Time: in Integer);
@@ -81,9 +81,9 @@ procedure Simulation is
       Put_Line(ESC & "[93m" & "P: Started producer of " & Product_Name(Producer_Type_Number) & ESC & "[0m");
       loop
          if In_Storage_Count > 0 then
-            Random_Time := Duration(Random_Production.Random(G)) / 3.0;
+            Random_Time := Duration(Random_Production.Random(G)) / 3.0; --he has it already in storage, it is only delivery time
          else
-            Random_Time := Duration(Random_Production.Random(G));
+            Random_Time := Duration(Random_Production.Random(G)); --he has to produce it
          end if;
 
          delay Random_Time;
@@ -114,7 +114,7 @@ procedure Simulation is
          end select;
          Product_Number := Product_Number + 1;
          if In_Storage_Count > 3 then
-            Put_Line(ESC & "[93m" & "P: On vacation went producer " & Product_Name(Producer_Type_Number)
+            Put_Line(ESC & "[93m" & "P: On vacation went producer " & Product_Name(Producer_Type_Number) --when Producer has a lot in storage, he can rest
                      & ESC & "[0m");
             delay 3.0;
          end if;
@@ -150,7 +150,7 @@ procedure Simulation is
       Put_Line(ESC & "[96m" & "C: Started consumer " & Consumer_Name(Consumer_Nb) & ESC & "[0m");
       loop
          if Consumer_Happy then
-            delay Duration(Random_Consumption.Random(G))/2.0;
+            delay Duration(Random_Consumption.Random(G))/2.0; --he was happy, because his order was done, he wants more faster
             Consumer_Happy := False;
          else
             delay Duration(Random_Consumption.Random(G));
@@ -169,7 +169,7 @@ procedure Simulation is
             end if;
          or
             delay 2.0;
-            Put_Line("Consumer waited too long. Does not want it anymore.");
+            Put_Line("Consumer waited too long. Does not want it anymore."); --waited too long for the products
          end select;
       end loop;
    end Consumer;
@@ -241,7 +241,7 @@ procedure Simulation is
                when 5 =>
                   if Storage(Product) = MousepadDeluxe_Max then
                      return False;
-                  end if;
+                  end if; --Buffer wants a variety of products, he has limits for each
                when others =>
                   return True;
             end case;
