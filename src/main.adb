@@ -169,7 +169,7 @@ procedure Simulation is
             end if;
          or
             delay 2.0;
-            Put_Line("Consumer waited too long. Does not want it anymore."); --waited too long for the products
+               Put_Line(ESC & "[96m" & "C: " & Consumer_Name(Consumer_Nb) & " waited too long. Does not want it anymore." & ESC & "[0m"); --waited too long for the products
          end select;
       end loop;
    end Consumer;
@@ -305,9 +305,10 @@ procedure Simulation is
             accept Nobel_Gift(Charity_Level : in Integer) do
                if Charity_Level > 7 then
                   Put_Line(ESC & "[92m" & "B: Nobel gift accepted with charity level " & Integer'Image(Charity_Level) & ESC & "[0m");
+                    In_Storage:=0;
                    for W in Producer_Type loop
                      Storage(W) := Storage(W) / 2;
-                     In_Storage := In_Storage - (Storage(W) / 2);
+                     In_Storage := In_Storage +Storage(W);
                   end loop;
                else
                   Put_Line(ESC & "[91m" & "B: Nobel gift rejected, charity level too low: " & Integer'Image(Charity_Level) & ESC & "[0m");
