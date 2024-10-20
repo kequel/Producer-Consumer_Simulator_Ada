@@ -4,6 +4,7 @@ This is a Producer-Consumer Simulator written in Ada, developed as part of the P
 ## Authors
 - Martyna Borkowska [GitHub](https://github.com/martynkaqhe)
 - Karolina Glaza [GitHub](https://github.com/kequel)
+- Amila Amarasekara
 
 ### Version
 Current version: 1.0
