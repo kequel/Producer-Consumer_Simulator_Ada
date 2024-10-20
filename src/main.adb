@@ -306,8 +306,10 @@ procedure Simulation is
                if Charity_Level > 7 then 
                   Put_Line(ESC & "[92m" & "B: Nobel gift accepted with charity level " & Integer'Image(Charity_Level) & ESC & "[0m");
                     In_Storage:=0;
-                   for W in Producer_Type loop --jesli osiagniety wystarczajacy poziom to zmniejsza liczbe kazdego produktu o polowe
-                     Storage(W) := Storage(W) / 2;
+                  for W in Producer_Type loop --jesli osiagniety wystarczajacy poziom to zmniejsza liczbe kazdego produktu o polowe
+                     if Storage(W) > 1 then --jesli rowny jeden, nie do oddania
+                        Storage(W) := Storage(W) / 2;
+                        end if;
                      In_Storage := In_Storage +Storage(W);
                   end loop;
                else
@@ -338,4 +340,3 @@ begin
    end loop;
 
 end Simulation;
-
