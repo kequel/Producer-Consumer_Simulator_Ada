@@ -41,7 +41,7 @@ procedure Simulation is
    end Buffer;
 
    task type CharityEvent is
-      entry Start(goodness_of_heart_level: out Integer);
+      entry Start(goodness_of_heart_level: out Integer); 
    end CharityEvent;
 
    P: array ( 1 .. Number_Of_Producers ) of Producer;
@@ -50,12 +50,12 @@ procedure Simulation is
    C: CharityEvent;
 
    task body CharityEvent is
-      subtype Charity_Level_Range is integer range 0 .. 10;
+      subtype Charity_Level_Range is integer range 0 .. 10; 
       package Random_Charity is new Ada.Numerics.Discrete_Random(Charity_Level_Range);
       GC: Random_Charity.Generator;
    begin
       loop
-         accept Start(goodness_of_heart_level: out Integer) do
+         accept Start(goodness_of_heart_level: out Integer) do --generuje losowy integer od 0 do 10 na wyjscie 
             Random_Charity.Reset(GC);
             goodness_of_heart_level := Random_Charity.Random(GC);
          end Start;
@@ -303,10 +303,10 @@ procedure Simulation is
             end Deliver;
          or
             accept Nobel_Gift(Charity_Level : in Integer) do
-               if Charity_Level > 7 then
+               if Charity_Level > 7 then 
                   Put_Line(ESC & "[92m" & "B: Nobel gift accepted with charity level " & Integer'Image(Charity_Level) & ESC & "[0m");
                     In_Storage:=0;
-                   for W in Producer_Type loop
+                   for W in Producer_Type loop --jesli osiagniety wystarczajacy poziom to zmniejsza liczbe kazdego produktu o polowe
                      Storage(W) := Storage(W) / 2;
                      In_Storage := In_Storage +Storage(W);
                   end loop;
@@ -333,8 +333,9 @@ begin
       begin
          C.Start(Charity_Level);
          B.Nobel_Gift(Charity_Level);
-         delay 5.0;
+         delay 5.0; --wowolanie Nobel Gifta co 5 sekund
       end;
    end loop;
 
 end Simulation;
+
