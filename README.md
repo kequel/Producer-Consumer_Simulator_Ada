@@ -40,11 +40,11 @@ Both producers and consumers run concurrently, simulating a real-time production
 4) If has a high goodness of heart, gives half of its products away as a Noble Gift.
 
 ## Example of Output 
-`P: On vacation went producer Keychain`                      
+`P: On vacation went producer Keychain  `                      
 
-`B: Delivered assembly Premium Deluxe                 number  1`
+`B: Delivered assembly Premium Deluxe  ` 
 
-`C: MEDIA EXPERT takes assembly Premium Deluxe                 number  1`
+`C: MEDIA EXPERT takes assembly Premium Deluxe  `
 
 `|   Storage contents:  1 Keychain `                     
 
@@ -70,8 +70,8 @@ Both producers and consumers run concurrently, simulating a real-time production
 
 `|   Storage contents:  1 Mousepad Deluxe  `             
 
-`|   Number of products in storage:  18`
+`|   Number of products in storage:  18  `
 
-`P: Produced product T-shirt                        number  23`
+`P: Produced product T-shirt  `
 
-`B: Accepted product T-shirt                        number  23`
+`B: Accepted product T-shirt  `
